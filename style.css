@@ -1,0 +1,118 @@
+.navbar-brand {
+    padding: 5px;
+    background-color: aliceblue;
+    font-weight: bolder;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* #nav_bar{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+} */
+
+.navbar-brand:hover {
+    transform: translateY(2px);
+}
+
+.jumbotron {
+    min-height: 400px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron>.lead {
+    padding: 0px 20px 0px 20px;
+}
+
+.display-9 {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 5px;
+}
+
+#pro {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 10px;
+
+        justify-items: center;
+        align-content: end;
+    }
+
+    .card:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .card_container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    
+        justify-items: center;
+        align-content: end;
+    }
+
+}
+
+.row {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h6 {
+    text-align: center;
+}
+
+.card_title>a {
+    gap: 20px;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.card_body {
+    justify-items: center;
+    align-content: end;
+    height: 200px;
+}
+.fa-brands,.fa-solid{
+font-size: 18px;
+padding: 5px;
+color: black;
+}
+.fa-solid:hover{
+    /* color: darkblue; */
+    color: rgb(139, 139, 150);
+    font-size: 22px;
+}
+.fa-brands:hover{
+    color: rgb(139, 139, 150);
+    font-size: 22px;
+}
